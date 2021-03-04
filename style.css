@@ -8,15 +8,17 @@ html, body{
   -ms-background-size: cover;   
   background-size: cover;
 }
+
 h1{
 	font-size:3rem;
 	color:#e2dbdb;
-	/*text-align: center;*/
+	text-align: center;
 }
+
 hr{
-	border-color:#f05f44;
+	border-color: #f05f44;
 	border-width: 3px;
-	max-width: 65px;
+	max-width: 100px;
 }
 
 .btn{
@@ -36,9 +38,88 @@ hr{
 }
 
 .btn-xl{
-	padding: 1rem 2rem;
+	padding: .5rem 1rem;
 }
 
 .buffer{
 	height: 10rem;
+}
+header{
+	position: absolute;
+	top: 15px;
+}
+
+section{
+	position: absolute;
+	top: -70px;
+}	
+
+@media(max-width:380px){
+	html, body{
+	  background : url(header-mobile.png) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -o-background-size: cover;
+	  -ms-background-size: cover;   
+	  background-size: cover;
+	}
+
+	h1{
+		font-size:1rem;
+		color:#e2dbdb;
+		text-align: center;
+		position: relative;
+		margin-top: 30px;
+	}
+
+	hr{
+		border-color: #f05f44;
+		border-width: 3px;
+		max-width: 65px;
+		position: relative;
+		margin-top: -25px;
+	}
+
+	.buffer{
+		height: 50px;
+	}	
+
+
+	header{
+		position: absolute;
+		top: -50px;
+	}
+
+	section{
+		position: absolute;
+		top: 25px;
+	}
+	.btn{
+		font-weight: 400px;
+		border-radius: 25px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	.btn-primary{
+		background-color: #f05f44;
+		border-color: #f05f44;
+	}
+
+	.btn-xl{
+		padding: .5rem;
+
+	}
+
+
+	.btn-primary:hover{
+		background-color: #ee4b08;
+		border-color: #ee4b08;
+		border-width: 2px;
+	}
+
+	a{
+		font-weight: 650px;
+		font-size: .5rem;
+
+	}	
 }
